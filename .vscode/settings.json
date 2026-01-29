@@ -1,0 +1,16 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": ["src"],
+    "python.autoComplete.extraPaths": ["src"],
+    "python.linting.ruffPath": ".venv/bin/ruff",
+    "[python]": {
+        "editor.defaultFormatter": "astral-sh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    }
+}
+

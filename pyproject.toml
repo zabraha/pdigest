@@ -1,0 +1,27 @@
+[project]
+name = "robotics-digest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Manoj Abraham", email = "manoj@internetdonkey.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.4.1",
+    "numpy>=2.4.1",
+    "ollama>=0.6.1",
+    "pydantic>=2.12.5",
+    "rich>=14.3.1",
+    "ruff>=0.14.14",
+    "scikit-learn>=1.8.0",
+    "sentence-transformers>=5.2.2",
+]
+
+[project.scripts]
+robotics-digest = "robotics_digest:main"
+digest-demo = "robotics_digest.main:run_demo"
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
